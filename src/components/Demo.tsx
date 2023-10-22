@@ -65,16 +65,12 @@ export default function Demo() {
                 <div>{!!error && <h4 style={{ marginTop: "1rem", marginBottom: "0" }}>{getErrorMessage(error)}</h4>}</div>
                 <div className="grid grid-cols-2 gap-2 px-2 py-4">
                   <div className="card bordered">
-                    <figure>
-                      <img className="h-24" src="https://metamask.io/images/mm-logo.svg" alt="metamask" />
-                    </figure>
                     <div className="card-body">
                       <h2 className="card-title">
                         <a className="link link-hover" href="https://metamask.io/" target="_blank" rel="noreferrer">
                           MetaMask
                         </a>
                       </h2>
-                      <p>A crypto wallet & gateway to blockchain apps</p>
                       <div className="justify-end card-actions">
                         <button
                           type="button"
@@ -87,11 +83,6 @@ export default function Demo() {
                         >
                           <div className="px-2 py-4">
                             {activating(injected) && <p className="btn loading">loading...</p>}
-                            {connected(injected) && (
-                              <span role="img" aria-label="check">
-                                ✅
-                              </span>
-                            )}
                           </div>
                           Connect with MetaMask
                         </button>
@@ -108,7 +99,7 @@ export default function Demo() {
                                 deactivate();
                               }}
                             >
-                              Deactivate
+                              Disconnect
                             </button>
                           </>
                         )}

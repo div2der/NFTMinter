@@ -7,7 +7,7 @@ import { Balance } from "./Balance";
 import { ChainId } from "./ChainId";
 
 const style = {
-  backgroundColor: '#7530ff'
+  backgroundColor: 'black'
 };
 
 export function Header() {
@@ -16,11 +16,9 @@ export function Header() {
   return (
     <div className="mb-2 shadow-lg navbar bg-neutral text-neutral-content rounded-box">
       <div className="flex-1 px-2 mx-2">
-        <span className="text-lg font-bold">{chainId == 80001 ? "🟢" : error ? "🔴" : "🟠"}</span>
-        <h1 className="btn btn-ghost btn-sm rounded-btn" >{chainId == 80001 ? "Polygon Network" : "No Polygon Network"}</h1>
         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
         <Link href="/">
-          <h1 style={style} className="btn btn-ghost btn-sm rounded-btn">Marketplace</h1>
+          <h1 style={style} className="btn btn-ghost btn-sm rounded-btn">NFTs</h1>
         </Link>
         &nbsp;&nbsp;
         <Link href="/minting">

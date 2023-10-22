@@ -18,6 +18,7 @@ function getRandomInt(max) {
 }
 
 let values = [
+    /*
     {
         "name": "NFT Charles",
         "description": "This image shows the true nature of Cardano.",
@@ -210,6 +211,7 @@ let values = [
             "tokenId": 123123,
         }
     }
+    */
 ];
 
 /* eslint-disable import/prefer-default-export */

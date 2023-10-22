@@ -37,17 +37,14 @@ export default function Card(props) {
     account = useWeb3React();
     return (
         <MDBCard style={{ maxWidth: '42rem', backgroundColor: '#222222' }}>
-            <MDBCardImage src={props.image} position='top' alt='...' />
+            <MDBCardImage src="https://i.redd.it/fx91nhtlia081.png" position='top' alt='...' />
+            <img src = ""></img>
             <MDBCardBody>
                 <MDBCardTitle>{props.name}</MDBCardTitle>
                 <MDBCardText>
                     {props.description}
                 </MDBCardText>
                 <hr />
-                <div style={style}>
-                    Owner: {nftOwner}
-                    <br />
-                </div>
                 <br />
                 <MDBBtn onClick={() => {
                     trasferNFT(props.contractAbi, props.contractAddress, props.tokenID);

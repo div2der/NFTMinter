@@ -6,10 +6,7 @@ export function Account() {
 
   return (
     <div className="btn btn-ghost btn-sm rounded-btn">
-      <span>Account</span>
-      <span role="img" aria-label="robot">
-        🤖
-      </span>
+      <span>Account: </span>
       <span>
         {account === null
           ? "-"
